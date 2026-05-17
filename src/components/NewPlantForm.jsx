@@ -49,7 +49,7 @@ function NewPlantForm({ onAddPlants }) {
           placeholder="Price"
           onChange={handleChange}
         />
-        <button type="submit">Add Plant</button>
+        <button type="submit">Add Plant Species</button>
       </form>
     </div>
   );
