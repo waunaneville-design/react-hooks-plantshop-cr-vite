@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "./Header";
-import PlantPage from "./PlantsPage";
+import PlantsPage from "./PlantsPage";
 
 function App() {
   return (
     <div className="app">
       <Header />
-      <PlantPage />
+      <PlantsPage />
     </div>
   );
 }
