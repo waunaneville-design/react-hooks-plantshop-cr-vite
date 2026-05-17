@@ -7,7 +7,7 @@ function PlantList({ plants, onToggleSoldOut }) {
       {plants.map((plant) => (
         <PlantCard
           key={plant.id}
-          plants={plant}
+          plant={plant}
           onToggleSoldOut={onToggleSoldOut}
         />
       ))}

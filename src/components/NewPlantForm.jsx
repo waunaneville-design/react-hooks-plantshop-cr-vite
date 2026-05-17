@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function NewPlantForm({ onAddPlants }) {
+function NewPlantForm({ onAddPlant }) {
   const [formData, setFormData] = useState({
     name: "",
     image: "",
@@ -19,7 +19,7 @@ function NewPlantForm({ onAddPlants }) {
     event.preventDefault();
     if (!formData.name || !formData.image || !formData.price) return;
 
-    onAddPlants([formData]);
+    onAddPlant(formData);
     setFormData({ name: "", image: "", price: "" });
   };
 
@@ -49,7 +49,7 @@ function NewPlantForm({ onAddPlants }) {
           placeholder="Price"
           onChange={handleChange}
         />
-        <button type="submit">Add Plant Species</button>
+        <button type="submit">Add Plant</button>
       </form>
     </div>
   );
