@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function NewPlantForm({ onAddPlant }) {
+function NewPlantForm({ onAddPlants }) {
   const [formData, setFormData] = useState({
     name: "",
     image: "",
@@ -19,7 +19,7 @@ function NewPlantForm({ onAddPlant }) {
     event.preventDefault();
     if (!formData.name || !formData.image || !formData.price) return;
 
-    onAddPlant(formData);
+    onAddPlants([formData]);
     setFormData({ name: "", image: "", price: "" });
   };
 
