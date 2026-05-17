@@ -50,4 +50,7 @@ function PlantsPage() {
     setSearchQuery(event.target.value);
   };
 
+const filteredPlants = plants.filter((plant) =>
+    plant.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
