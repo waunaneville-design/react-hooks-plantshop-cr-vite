@@ -25,7 +25,7 @@ function NewPlantForm({ onAddPlants }) {
 
   return (
     <div className="new-plant-form">
-      <h2>New Plant</h2>
+      <h2>New Plant Species</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
