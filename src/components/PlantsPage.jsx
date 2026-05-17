@@ -63,5 +63,5 @@ const filteredPlants = plants.filter((plant) =>
   );
 }
 
-export default PlantPage;
+export default PlantsPage;
 
