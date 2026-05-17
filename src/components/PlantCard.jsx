@@ -6,7 +6,7 @@ function PlantCard({ plant, onToggleSoldOut }) {
   return (
     <li className="card" data-testid="plant-item">
       <img src={plant.image} alt={plant.name} />
-      <h4>{plant.name}</h4>
+      <h3>{plant.name}</h3>
       <p>Price: {plant.price}</p>
       <button
         className={plant.soldOut ? "" : "primary"}
