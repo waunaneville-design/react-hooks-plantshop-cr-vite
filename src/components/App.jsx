@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import PlantPage from "./PlantPage";
+import PlantPage from "./PlantsPage";
 
 function App() {
   return (
