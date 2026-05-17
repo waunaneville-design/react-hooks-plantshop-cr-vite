@@ -54,3 +54,14 @@ const filteredPlants = plants.filter((plant) =>
     plant.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  return (
+    <main>
+      <NewPlantForm onAddPlant={handleAddPlant} />
+      <Search searchQuery={searchQuery} onSearchChange={handleSearchChange} />
+      <PlantList plants={filteredPlants} onToggleSoldOut={handleToggleSoldOut} />
+    </main>
+  );
+}
+
+export default PlantPage;
+
