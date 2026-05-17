@@ -35,3 +35,14 @@ function PlantsPage() {
         ]);
       });
   };
+
+  const handleToggleSoldOut = (plantId) => {
+    setPlants((previousPlants) =>
+      previousPlants.map((plant) =>
+        plant.id === plantId
+          ? { ...plant, soldOut: !plant.soldOut }
+          : plant
+      )
+    );
+  };
+
