@@ -46,3 +46,8 @@ function PlantsPage() {
     );
   };
 
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+
